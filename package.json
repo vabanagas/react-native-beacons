@@ -1,0 +1,43 @@
+{
+  "name": "react-native-beacons",
+  "title": "React Native Beacons",
+  "version": "1.0.0",
+  "description": "React Native Beacons is a simple library for detecting beacons on iOS and Android",
+  "types": "./types/index.d.ts",
+  "main": "index.js",
+  "scripts": {
+    "validate:eslint": "eslint 'js/**/*.js' 'example/**/*.js'",
+    "validate:flow": "flow check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vabanagas/react-native-beacons.git",
+    "baseUrl": "https://github.com/vabanagast/react-native-beacons"
+  },
+  "keywords": [
+    "react-native",
+    "beacon",
+    "beacons",
+    "iBeacon",
+    "Eddystone"
+  ],
+  "author": {
+    "name": "Vincent Banagas",
+    "email": "vabanagas@gmail.com"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "^16.8.1",
+    "react-native": ">=0.59.0-rc.0 <1.0.x"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "0.0.5",
+    "eslint": "^6.3.0",
+    "flow-bin": "^0.107.0",
+    "prettier": "^1.18.2",
+    "react": "^16.8.3",
+    "react-native": "^0.59.10"
+  }
+}
