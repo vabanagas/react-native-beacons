@@ -1,8 +1,6 @@
 # react-native-beacons
 
-Beacon detection for React Native
-- iOS via iBeacon
-- Android via Eddystone
+Beacon detection for React Native via iBeacon
 
 ## Getting started
 
@@ -63,4 +61,4 @@ componentWillUnmount() {
 ```
 
 ## TODO
-- Android/Eddystone support
+- Android support

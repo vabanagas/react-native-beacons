@@ -3,7 +3,6 @@ package com.reactlibrary;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Callback;
 
 public class BeaconsModule extends ReactContextBaseJavaModule {
 
@@ -20,8 +19,22 @@ public class BeaconsModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void sampleMethod(String stringArgument, int numberArgument, Callback callback) {
-        // TODO: Implement some actually useful functionality
-        callback.invoke("Received numberArgument: " + numberArgument + " stringArgument: " + stringArgument);
+    public void requestAlwaysAuthorization() {
+        // TODO: Request permissions
+    }
+
+    @ReactMethod
+    public void requestWhenInUseAuthorization() {
+        // TODO: Request permissions
+    }
+
+    @ReactMethod
+    public void startRangingBeaconsInRegion(String uuid, String identifier) {
+        // TODO: Start beacon ranging
+    }
+
+    @ReactMethod
+    public void stopRangingBeaconsInRegion(String uuid, String identifier) {
+        // TODO: Stop beacon ranging
     }
 }

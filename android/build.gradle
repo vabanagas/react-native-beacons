@@ -49,10 +49,12 @@ repositories {
         url "$projectDir/../node_modules/react-native/android"
     }
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
     implementation "com.facebook.react:react-native:${safeExtGet('reactnativeVersion', '+')}"
+    implementation 'org.altbeacon:android-beacon-library:2+'
 }
 
 def configureReactNativePom(def pom) {
