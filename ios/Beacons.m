@@ -29,21 +29,6 @@ RCT_EXPORT_MODULE();
 
 #pragma mark
 
-
-RCT_EXPORT_METHOD(requestAlwaysAuthorization)
-{
-  if ([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
-    [self.locationManager requestAlwaysAuthorization];
-  }
-}
-
-RCT_EXPORT_METHOD(requestWhenInUseAuthorization)
-{
-  if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
-    [self.locationManager requestWhenInUseAuthorization];
-  }
-}
-
 RCT_EXPORT_METHOD(startRangingBeaconsInRegion:(NSString *)uuid identifier:(NSString *)identifier)
 {
   NSLog(@"Starting Beacon Monitoring");

@@ -23,16 +23,6 @@ declare module 'react-native-beacons' {
 
   export interface BeaconsStatic {
     /**
-     * Requests permission to use location services whenever the app is running.
-     */
-    requestAlwaysAuthorization(): void;
-
-    /**
-     * Requests permission to use location services while the app is in the foreground.
-     */
-    requestWhenInUseAuthorization(): void;
-
-    /**
      * Starts the delivery of events for the specified beacon region.
      */
     startRangingBeaconsInRegion(uuid: string, identifier: string): void;

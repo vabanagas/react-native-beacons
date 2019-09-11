@@ -41,8 +41,8 @@ Beacon detection for React Native via iBeacon
 import Beacons from '@vabanagas/react-native-beacons';
 
 componentDidMount() {
-	// Request permissions
-	Beacons.requestAlwaysAuthorization();
+	// Request location permissions first
+
 	// Start ranging beacons
 	Beacons.startRangingBeaconsInRegion('REGION_UUID', 'REGION_IDENTIFIER')
 	// Add an event listener
